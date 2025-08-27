@@ -1,0 +1,25 @@
+{
+  "heroSection": {
+    "headerLine1": "Permudah Bisnis Anda",
+    "headerLine2": "Tingkatkan Pertumbuhan",
+    "paragraph": "Rasakan cara cerdas mengelola bisnis Anda. Platform ERP all-in-one kami membantu mengoptimalkan operasional, meningkatkan produktivitas, dan membuat keputusan berbasis data. Dipercaya oleh ribuan bisnis di seluruh dunia untuk mendorong pertumbuhan nyata.",
+    "buttonGetStarted": "Mulai Sekarang",
+    "buttonLearnMore": "Pelajari Lebih Lanjut"
+  },
+  "aboutSection": {
+    "title": "Tentang Kami",
+    "paragraph": "Di DekaTech, kami menghadirkan platform ERP berbasis cloud yang kuat untuk menyatukan seluruh operasional bisnis, memusatkan data, dan mendorong pertumbuhan cerdas. Dengan menyelaraskan keuangan, rantai pasok, dan operasional, Anda memperoleh kejelasan dan kendali untuk mengambil keputusan berbasis data dengan percaya diri serta mengembangkan bisnis dengan lebih mudah.",
+    "innovation": {
+      "title": "Keunggulan dalam Inovasi",
+      "description": "Kami terus mendorong batas untuk menghadirkan solusi inovatif yang tetap selangkah lebih maju."
+    },
+    "customer": {
+      "title": "Berpusat pada Pelanggan",
+      "description": "Kesuksesan Anda adalah prioritas kami. Kami membangun solusi yang benar-benar menjawab tantangan unik Anda."
+    },
+    "results": {
+      "title": "Hasil Terbukti",
+      "description": "Rekam jejak memberikan hasil yang terukur dan mendorong pertumbuhan bisnis yang signifikan."
+    }
+  }
+}

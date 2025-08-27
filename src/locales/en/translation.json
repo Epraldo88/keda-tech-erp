@@ -1,0 +1,25 @@
+{
+  "heroSection": {
+    "headerLine1": "Streamline Your Business",
+    "headerLine2": "Amplify Your Growth",
+    "paragraph": "Experience a smarter way to manage your business. Our all-in-one ERP platform helps you optimize operations, boost productivity, and make data-driven decisions. Trusted by thousands of businesses worldwide to drive real growth.",
+    "buttonGetStarted": "Get Started",
+    "buttonLearnMore": "Learn More"
+  },
+  "aboutSection": {
+    "title": "About Us",
+    "paragraph": "At DekaTech, we deliver a powerful, cloud-based ERP platform that unifies your business operations, centralizes data, and fuels intelligent growth. By aligning your finance, supply chain, and operations, you gain the clarity and control to make confident, data-driven decisions and scale your business with ease.",
+    "innovation": {
+      "title": "Excellence in Innovation",
+      "description": "We constantly push boundaries to deliver innovative solutions that stay ahead of industry trends."
+    },
+    "customer": {
+      "title": "Customer-Centric Approach",
+      "description": "Your success is our priority. We build solutions that truly address your unique challenges."
+    },
+    "results": {
+      "title": "Proven Results",
+      "description": "Track record of delivering measurable results and driving significant business growth."
+    }
+  }
+}

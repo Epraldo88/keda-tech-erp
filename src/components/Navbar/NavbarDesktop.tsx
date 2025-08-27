@@ -1,3 +1,4 @@
+import LanguageToggle from "./LanguageToggle";
 import LoginButton from "./LoginButton";
 import NavbarLink from "./NavbarLink";
 
@@ -23,6 +24,7 @@ const NavbarDesktop = ({
         />
       ))}
       <LoginButton />
+      <LanguageToggle />
     </div>
   );
 };

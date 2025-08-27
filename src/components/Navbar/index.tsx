@@ -5,6 +5,7 @@ import { useNavigationStore } from "../../store/navigation.store";
 import Logo from "../Logo";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
+import LanguageToggle from "./LanguageToggle"; // import the toggle
 
 const Navbar = () => {
   const { isMenuOpen, toggleMenu } = useNavigationStore();
@@ -41,11 +42,14 @@ const Navbar = () => {
           <Logo placement="navbar" />
 
           {/* Desktop Menu */}
-          <NavbarDesktop
-            sections={sections}
-            activeSection={activeSection}
-            scrollToSection={scrollToSection}
-          />
+          <div className="hidden md:flex items-center space-x-6">
+            <NavbarDesktop
+              sections={sections}
+              activeSection={activeSection}
+              scrollToSection={scrollToSection}
+            />
+            {/* Language Toggle */}
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -64,11 +68,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <NavbarMobile
-          sections={sections}
-          activeSection={activeSection}
-          scrollToSection={scrollToSection}
-        />
+        <div className="md:hidden">
+          <NavbarMobile
+            sections={sections}
+            activeSection={activeSection}
+            scrollToSection={scrollToSection}
+          />
+          <div className="px-4 py-2 border-t border-gray-200">
+            <LanguageToggle />
+          </div>
+        </div>
       )}
     </nav>
   );
