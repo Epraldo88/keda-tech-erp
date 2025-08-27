@@ -5,25 +5,31 @@ import { useNavigationStore } from "../../store/navigation.store";
 import Logo from "../Logo";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
-import LanguageToggle from "./LanguageToggle"; // import the toggle
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const { isMenuOpen, toggleMenu } = useNavigationStore();
   const { scrollToSection } = useScrollToSection();
   const [activeSection, setActiveSection] = useState("home");
 
-  const sections = ["home", "about", "pricing", "contact"];
+  const sections = [
+    { id: "home", labelKey: "navbar.home" },
+    { id: "about", labelKey: "navbar.about" },
+    { id: "pricing", labelKey: "navbar.pricing" },
+    { id: "contact", labelKey: "navbar.contact" },
+  ];
 
   // Detect scroll & set active section
   useEffect(() => {
     const handleScroll = () => {
       let current = "home";
-      sections.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
+      sections.forEach(({ id }) => {
+        const section = document.getElementById(id);
         if (section) {
           const rect = section.getBoundingClientRect();
           if (rect.top <= 150 && rect.bottom >= 150) {
-            current = sectionId;
+            current = id;
           }
         }
       });
@@ -44,11 +50,10 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
             <NavbarDesktop
-              sections={sections}
+              sections={sections.map((s) => ({ ...s, label: t(s.labelKey) }))}
               activeSection={activeSection}
               scrollToSection={scrollToSection}
             />
-            {/* Language Toggle */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,13 +75,10 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <NavbarMobile
-            sections={sections}
+            sections={sections.map((s) => ({ ...s, label: t(s.labelKey) }))}
             activeSection={activeSection}
             scrollToSection={scrollToSection}
           />
-          <div className="px-4 py-2 border-t border-gray-200">
-            <LanguageToggle />
-          </div>
         </div>
       )}
     </nav>

@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "pricing": "Harga",
+    "contact": "Kontak"
+  },
   "heroSection": {
     "headerLine1": "Permudah Bisnis Anda",
     "headerLine2": "Tingkatkan Pertumbuhan",
@@ -21,5 +27,82 @@
       "title": "Hasil Terbukti",
       "description": "Rekam jejak memberikan hasil yang terukur dan mendorong pertumbuhan bisnis yang signifikan."
     }
+  },
+  "pricingSection": {
+    "month": "bulan",
+    "basic": {
+      "name": "Dasar",
+      "description": "Cocok untuk bisnis kecil",
+      "features": {
+        "feature1": "Mencatat barang masuk",
+        "feature2": "Mencatat barang keluar",
+        "feature3": "Mencatat hasil keuntungan"
+      },
+      "cta": "Mulai Sekarang"
+    },
+    "business": {
+      "name": "Bisnis",
+      "description": "Ideal untuk perusahaan yang berkembang",
+      "features": {
+        "feature1": "Mencatat barang masuk dan keluar",
+        "feature2": "Mencatat keuntungan",
+        "feature3": "Dapat menganalisa hasil penjualan dengan CHART",
+        "feature4": "Support 7x24 Jam"
+      },
+      "cta": "Mulai Sekarang"
+    },
+    "entrepreneur": {
+      "name": "Pengusaha",
+      "description": "Untuk solusi perusahaan",
+      "features": {
+        "feature1": "Mencatat barang masuk dan keluar",
+        "feature2": "Mencatat keuntungan",
+        "feature3": "Dapat menganalisa hasil penjualan dengan CHART",
+        "feature4": "Support 7x24 Jam",
+        "feature5": "Export data ke Excel",
+        "feature6": "AI Prediksi penghasilan"
+      },
+      "cta": "Hubungi Tim Sales"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "description": "Siap untuk memulai? Punya pertanyaan? Kami senang mendengar dari Anda. Kirimkan pesan dan kami akan merespons secepat mungkin.",
+    "formTitle": "Informasi Kontak",
+    "formContent": "Kami membuat konten berkualitas tinggi yang bisa ditautkan dan membangun minimal 40 backlink dari sumber berotoritas untuk meningkatkan kehadiran online Anda.",
+    "yourName": "Nama Anda",
+    "yourEmail": "Email Anda",
+    "yourSubject": "Subjek Anda",
+    "message": "Pesan",
+    "placeholder": {
+      "subject": "Saya mau berlangganan",
+      "message": "Tulis pesan anda disini"
+    },
+    "button": {
+      "sendMessage": "Kirim Pesan"
+    }
+  },
+  "authModal": {
+    "title": {
+      "login": "Masuk",
+      "register": "Buat Akun"
+    },
+    "form": {
+      "fullName": "Nama Lengkap",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "submit": {
+        "login": "Masuk",
+        "register": "Daftar"
+      }
+    },
+    "switchMode": {
+      "login": "Belum punya akun? Daftar",
+      "register": "Sudah punya akun? Masuk",
+      "loginButton": "Daftar",
+      "registerButton": "Masuk"
+    },
+    "closeButton": "Tutup"
   }
 }

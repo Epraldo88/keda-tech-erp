@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { useAuthModalStore } from "../../store/auth-modal";
+import { useTranslation } from "react-i18next";
 
 const AuthModal = () => {
+  const { t } = useTranslation();
   const { isOpen, mode, closeModal, switchMode } = useAuthModalStore();
   const [show, setShow] = useState(false);
 
@@ -52,7 +54,9 @@ const AuthModal = () => {
 
         {/* Title */}
         <h2 className="text-2xl font-bold text-center mb-6">
-          {mode === "login" ? "Login" : "Create Account"}
+          {mode === "login"
+            ? t("authModal.title.login")
+            : t("authModal.title.register")}
         </h2>
 
         {/* Form */}
@@ -60,24 +64,24 @@ const AuthModal = () => {
           {mode === "register" && (
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder={t("authModal.form.fullName")}
               className="w-full rounded-lg border px-4 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
             />
           )}
           <input
             type="email"
-            placeholder="Email"
+            placeholder={t("authModal.form.email")}
             className="w-full rounded-lg border px-4 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder={t("authModal.form.password")}
             className="w-full rounded-lg border px-4 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
           />
           {mode === "register" && (
             <input
               type="password"
-              placeholder="Confirm Password"
+              placeholder={t("authModal.form.confirmPassword")}
               className="w-full rounded-lg border px-4 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
             />
           )}
@@ -86,7 +90,9 @@ const AuthModal = () => {
             type="submit"
             className="w-full rounded-lg bg-blue-600 text-white py-2 font-semibold hover:bg-blue-700 transition-colors duration-200 mt-2"
           >
-            {mode === "login" ? "Login" : "Register"}
+            {mode === "login"
+              ? t("authModal.form.submit.login")
+              : t("authModal.form.submit.register")}
           </button>
         </form>
 
@@ -94,24 +100,24 @@ const AuthModal = () => {
         <p className="text-center text-sm text-gray-600 mt-4">
           {mode === "login" ? (
             <>
-              Don't have an account?{" "}
+              {t("authModal.switchMode.login")}{" "}
               <button
                 type="button"
                 onClick={() => switchMode("register")}
                 className="text-blue-600 hover:underline transition-colors duration-200"
               >
-                Register
+                {t("authModal.form.submit.register")}
               </button>
             </>
           ) : (
             <>
-              Already have an account?{" "}
+              {t("authModal.form.submit.register")}{" "}
               <button
                 type="button"
                 onClick={() => switchMode("login")}
                 className="text-blue-600 hover:underline transition-colors duration-200"
               >
-                Login
+                {t("authModal.form.submit.login")}
               </button>
             </>
           )}

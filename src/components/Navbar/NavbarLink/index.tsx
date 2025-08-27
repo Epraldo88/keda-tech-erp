@@ -1,4 +1,5 @@
 export interface NavbarLinkProps {
+  id: string;
   section: string;
   activeSection: string;
   scrollToSection: (section: string) => void;
@@ -6,6 +7,7 @@ export interface NavbarLinkProps {
 }
 
 const NavbarLink = ({
+  id,
   section,
   activeSection,
   scrollToSection,
@@ -16,16 +18,16 @@ const NavbarLink = ({
     : `transition-colors`;
 
   const activeClass =
-    activeSection === section
+    activeSection === id
       ? "text-blue-600 font-semibold"
       : "text-gray-700 hover:text-blue-600";
 
   return (
     <button
-      onClick={() => scrollToSection(section)}
+      onClick={() => scrollToSection(id)}
       className={`${baseClass} ${activeClass}`}
     >
-      {section.toUpperCase()}
+      {section}
     </button>
   );
 };

@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
   "heroSection": {
     "headerLine1": "Streamline Your Business",
     "headerLine2": "Amplify Your Growth",
@@ -21,5 +27,82 @@
       "title": "Proven Results",
       "description": "Track record of delivering measurable results and driving significant business growth."
     }
+  },
+  "pricingSection": {
+    "month": "month",
+    "basic": {
+      "name": "Basic",
+      "description": "Perfect for small businesses",
+      "features": {
+        "feature1": "Record incoming goods",
+        "feature2": "Record outgoing goods",
+        "feature3": "Track profit results"
+      },
+      "cta": "Get Started"
+    },
+    "business": {
+      "name": "Business",
+      "description": "Ideal for growing companies",
+      "features": {
+        "feature1": "Record incoming and outgoing goods",
+        "feature2": "Track profits",
+        "feature3": "Analyze sales results with charts",
+        "feature4": "24/7 support"
+      },
+      "cta": "Get Started"
+    },
+    "entrepreneur": {
+      "name": "Entrepreneur",
+      "description": "For enterprise solutions",
+      "features": {
+        "feature1": "Record incoming and outgoing goods",
+        "feature2": "Track profits",
+        "feature3": "Analyze sales results with charts",
+        "feature4": "24/7 support",
+        "feature5": "Export data to Excel",
+        "feature6": "AI income prediction"
+      },
+      "cta": "Contact Sales"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Ready to get started? Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "formTitle": "Contact Information",
+    "formContent": "We create high-quality, linkable content and build at least 40 backlinks from high-authority sources to boost your online presence.",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourSubject": "Your Subject",
+    "message": "Message",
+    "placeholder": {
+      "subject": "I want to subscribe",
+      "message": "Write your message here"
+    },
+    "button": {
+      "sendMessage": "Send Message"
+    }
+  },
+  "authModal": {
+    "title": {
+      "login": "Login",
+      "register": "Create Account"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": {
+        "login": "Login",
+        "register": "Register"
+      }
+    },
+    "switchMode": {
+      "login": "Don't have an account? Register",
+      "register": "Already have an account? Login",
+      "loginButton": "Register",
+      "registerButton": "Login"
+    },
+    "closeButton": "Close"
   }
 }

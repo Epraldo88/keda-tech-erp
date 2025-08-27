@@ -1,29 +1,12 @@
-import { Home, Mail } from "lucide-react";
-import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LeftPanel from "./LeftPanel";
+import RightPanel from "./RightPanel";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = () => {
-    console.log({ formData });
-    // e.preventDefault();
-    // alert("Thank you for your message! We'll get back to you soon.");
-    // setFormData({ name: "", email: "", message: "" });
-  };
+  const { t } = useTranslation();
   return (
     <section id="contact" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Get In Touch
@@ -115,6 +98,25 @@ const ContactSection = () => {
                 Send Message
               </button>
             </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          {t("contact.title")}
+        </h2>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          {t("contact.description")}
+        </p>
+      </div>
+      <div className="max-w-4xl mx-auto p-6 flex items-center justify-center">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden w-full">
+          <div className="flex flex-col lg:flex-row">
+            {/* Left Panel */}
+            <LeftPanel />
+
+            {/* Right Panel - Form */}
+            <RightPanel />
           </div>
         </div>
       </div>
